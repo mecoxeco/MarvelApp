@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "install": "^0.13.0"
+    "install": "^0.13.0",
+    "mongoose": "^8.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   }
 }
