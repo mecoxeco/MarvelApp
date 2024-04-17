@@ -1,19 +1,19 @@
-###NPM
+#NPM
 <kbd> npm i install -y <kbd>
 
-###Express
+#Express
 <kbd> npm install express <kbd>
 
-###Typescript
+#Typescript
 <kbd> npm install -D typescript <kbd>
 
-###TS Node
+#TS Node
 <kbd> npm install -D ts-node <kbd>
 
-###Mongoose (precisa do mongo DB instalado)
+#Mongoose (precisa do mongo DB instalado)
 <kbd> npm install mongoose --save <kbd>
 
-###Jest
+#Jest
 <kbd> npm i jest <kbd>
 
 
