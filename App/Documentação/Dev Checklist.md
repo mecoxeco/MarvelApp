@@ -1,7 +1,7 @@
 # Checklist
 
 ## Registro na API da Marvel
- Registro foi Realizado
+ Registro foi Realizado (conectar com MD5 hash generator)
 <kbd>-  (x)     -<kbd>
 
 ## Escolher Saga (Guerra Civíl)
