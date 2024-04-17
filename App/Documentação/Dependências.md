@@ -1,23 +1,25 @@
 # Instalação de Dependências
 
-<kbd style="background-color:#FFD700; color:#000"> npm i install -y </kbd>
+## Npm
+
+`npm i install -y`
 
 ## Express
 
-<kbd style="background-color:#32CD32; color:#fff"> npm install express </kbd>
+`npm install express`
 
 ## TypeScript
 
-<kbd style="background-color:#007ACC; color:#fff"> npm install -D typescript </kbd>
+`npm install -D typescript`
 
 ## TS Node
 
-<kbd style="background-color:#9400D3; color:#fff"> npm install -D ts-node </kbd>
+`npm install -D ts-node`
 
 ## Mongoose (requer MongoDB instalado)
 
-<kbd style="background-color:#FF6347; color:#fff"> npm install mongoose --save </kbd>
+`npm install mongoose --save`
 
 ## Jest
 
-<kbd style="background-color:#C71585; color:#fff"> npm i jest </kbd>
+`npm i jest`
