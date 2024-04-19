@@ -14,4 +14,4 @@ const ComicSchema: Schema = new Schema ({
     capaURL: { type: String, required: true},
 });
 
-export default model<Comic>("Comic", ComicSchema);
+export default model("Comic", ComicSchema);
