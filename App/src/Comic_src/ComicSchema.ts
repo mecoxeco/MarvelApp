@@ -1,17 +1,17 @@
-import mongoose, { schema, Document } from 'mongoose';
+import mongoose, { Schema, Document, model } from 'mongoose';
 
 export interface Comic extends Document {
-    Título: string;
-    Descrição: string;
-    Publicação: Date;
-    CapaURL: string;
+    título: string;
+    descrição: string;
+    publicação: Date;
+    capaURL: string;
 }
 
 const ComicSchema: Schema = new Schema ({
-    Título: { type: String, required: true },
-    Descrição: { type: String, required: true },
-    Publicação: { type: Date, required: true },
-    CapaURL: { type: String, required: true},
+    título: { type: String, required: true },
+    descrição: { type: String, required: true },
+    publicação: { type: Date, required: true },
+    capaURL: { type: String, required: true},
 });
 
-export default mongoose.model <comic>('comic', ComicSchema);
+export default model<Comic>("Comic", ComicSchema);
