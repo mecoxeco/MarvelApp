@@ -16,13 +16,13 @@ O objetivo deste projeto é desenvolver uma API própria que consiga interagir e
   
 ## 4Devs
 
-1. GitClone:
+###GitClone:
   
   ```bash
    git clone https://github.com/seu-usuario/marvel-app.git
   ```
 
-2. Dependências Utilizadas no MarvelAPP:
+###Dependências Utilizadas no MarvelAPP:
 
 ![typescript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![node](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
