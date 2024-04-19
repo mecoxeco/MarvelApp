@@ -18,13 +18,6 @@ O objetivo deste projeto é desenvolver uma API própria que consiga interagir e
 Dependências Utilizadas no MarvelAPP:
 
 ![typescript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![node](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![express](https://img.shields.io/badge/-Express-000000?style=flat&logo=express&logoColor=white)
-![jest](https://img.shields.io/badge/-Jest-C21325?style=flat&logo=jest&logoColor=white)
-![mongoose](https://img.shields.io/badge/-Mongoose-47A248?style=flat&logo=mongoose&logoColor=white)
-![marvel-api](https://img.shields.io/badge/-Marvel_API-FF0000?style=flat&logo=marvel&logoColor=white)
-
-![typescript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![npm](https://img.shields.io/badge/-NPM-CB3837?style=flat&logo=npm&logoColor=white)
 ![node](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![express](https://img.shields.io/badge/-Express-000000?style=flat&logo=express&logoColor=white)
