@@ -15,7 +15,7 @@ O objetivo deste projeto é desenvolver uma API própria que consiga interagir e
 - Deletar Informações contidas no banco;
   
 ## 4Devs
-Dependências Utilizadas no MarvelAPP:
+Linguagem e Dependências Utilizadas no MarvelAPP:
 
 ![typescript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![npm](https://img.shields.io/badge/-NPM-CB3837?style=flat&logo=npm&logoColor=white)
