@@ -7,11 +7,13 @@ export interface Comic extends Document {
     capaURL: string;
 }
 
-const ComicSchema: Schema = new Schema ({
+const ComicSchema: Schema = new Schema({
     título: { type: String, required: true },
     descrição: { type: String, required: true },
     publicação: { type: Date, required: true },
-    capaURL: { type: String, required: true},
+    capaURL: { type: String, required: true },
+}, {
+    timestamps: true
 });
 
 export default model("Comic", ComicSchema);
