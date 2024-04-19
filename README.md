@@ -22,13 +22,13 @@ O objetivo deste projeto é desenvolver uma API própria que consiga interagir e
    git clone https://github.com/seu-usuario/marvel-app.git
   ```
 
-2. Dependências
+2. Dependências Utilizadas no MarvelAPP:
 
-- Typescript ![typescript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-- Node.js ![node](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
-- Express ![express](https://img.shields.io/badge/-Express-000000?style=flat&logo=express&logoColor=white)
-- Jest ![jest](https://img.shields.io/badge/-Jest-C21325?style=flat&logo=jest&logoColor=white)
-- Mongoose ![mongoose](https://img.shields.io/badge/-Mongoose-47A248?style=flat&logo=mongoose&logoColor=white)
-- Marvel API ![marvel-api](https://img.shields.io/badge/-Marvel_API-FF0000?style=flat&logo=marvel&logoColor=white)
+![typescript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![node](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![express](https://img.shields.io/badge/-Express-000000?style=flat&logo=express&logoColor=white)
+![jest](https://img.shields.io/badge/-Jest-C21325?style=flat&logo=jest&logoColor=white)
+![mongoose](https://img.shields.io/badge/-Mongoose-47A248?style=flat&logo=mongoose&logoColor=white)
+![marvel-api](https://img.shields.io/badge/-Marvel_API-FF0000?style=flat&logo=marvel&logoColor=white)
 
 
