@@ -9,7 +9,7 @@ export interface Personagem extends Document {
 const PersonagemSchema: Schema = new Schema({
     nome: { type: String, required: true },
     descricao: { type: String, required: true },
-    url: { type: String, required: true }
+    url: { type: String, required: true },
 }, {
     timestamps: true
 });

@@ -18,7 +18,7 @@ Saga foi Escolhida
 - Personagens_: Mapear os dados dos personagens que aparecem na saga, *ATRIBUTOS* = Nome, Descrição, URL da imagem;
 - Quadrinhos_: Entidade *Comic* que armazena informações, *ATRIBUTOS* = Título, Descrição, Data de Publicação e capa;
 - Criadores_: Entidade *Criador* representa os criadores, *ATRIBUTOS* = Nome, Função, Quadrinhos que contribuiram;
-<kbd> - ( ) </kbd> 
+<kbd> - (x) </kbd> 
 
 ## Código Possui 5 rotas auxiliares
 - Rota para listar somente Personagens: Masculino .../Personagens/Mas;

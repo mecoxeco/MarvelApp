@@ -9,7 +9,7 @@ export interface Criador extends Document {
 const CriadorSchema: Schema = new Schema({
     nome: { type: String, required: true },
     funcao: { type: String, required: true },
-    hqsContribuidas: { type: String, required: true }
+    hqsContribuidas: { type: String, required: true },
 }, {
     timestamps: true
 });
