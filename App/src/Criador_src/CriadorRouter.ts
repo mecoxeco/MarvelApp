@@ -1,4 +1,3 @@
-// CriadorRouter.ts
 import express, { Request, Response } from 'express';
 import { CriadorService } from './CriadorService';
 import { Criador } from './CriadorSchema';
