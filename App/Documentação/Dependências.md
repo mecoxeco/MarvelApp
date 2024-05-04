@@ -23,3 +23,7 @@
 ## Jest
 
 `npm i jest`
+
+## Axios
+
+`npm install axios`
