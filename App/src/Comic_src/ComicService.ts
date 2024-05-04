@@ -1,9 +1,9 @@
 import { Comic } from './ComicSchema';
 import axios from 'axios';
-import md5 from 'md5'; // Importe a função md5 para calcular o hash
+import md5 from 'md5'; 
 
-const marvelPublicKey = 'sua_chave_publica'; // Substitua pelo seu valor
-const marvelPrivateKey = 'sua_chave_privada'; // Substitua pelo seu valor
+const marvelPublicKey = 'sua_chave_publica';
+const marvelPrivateKey = 'sua_chave_privada'; 
 
 export class ComicService {
     async createComic(comicData: Comic): Promise<Comic> {
