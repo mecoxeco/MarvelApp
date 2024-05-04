@@ -32,7 +32,7 @@ Linguagem e Dependências Utilizadas no MarvelAPP:
 GitClone:
   
   ```bash
-   git clone https://github.com/seu-usuario/marvel-app.git
+   git clone https://github.com/mecoxeco/MarvelApp.git
   ```
 
 
