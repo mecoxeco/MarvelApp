@@ -1,7 +1,8 @@
-// PersonagemRouter.ts
 import express, { Request, Response } from 'express';
 import { PersonagemService } from './PersonagemService';
 import { Personagem } from './PersonagemSchema';
+import md5 from 'md5';
+import axios from 'axios';
 
 const router = express.Router();
 const personagemService = new PersonagemService();
@@ -52,6 +53,34 @@ router.delete('/:id', async (req, res) => {
         } else {
             res.json({ message: 'Personagem deletado com sucesso' });
         }
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
+router.get('/marvel-personagens', async (req: Request, res: Response) => {
+    try {
+        const timestamp = new Date().getTime().toString();
+        const hash = md5(timestamp + marvelPrivateKey + marvelPublicKey);
+        const response = await axios.get(`https://gateway.marvel.com/v1/public/characters?apikey=${marvelPublicKey}&hash=${hash}&ts=${timestamp}&events=238`);
+        const marvelPersonagens = response.data.data.results;
+
+        const personagensToSave: Personagem[] = [];
+
+        for (const marvelPersonagem of marvelPersonagens) {
+            const personagemData: Personagem = {
+                nome: marvelPersonagem.name,
+                descricao: marvelPersonagem.description,
+                url: marvelPersonagem.urls.map((url: any) => url.url).join(', ')
+            };
+
+            personagensToSave.push(personagemData);
+        }
+
+        await Personagem.insertMany(personagensToSave);
+
+        const personagensFromDb = await Personagem.find();
+        res.json(personagensFromDb);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
