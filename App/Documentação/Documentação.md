@@ -43,103 +43,33 @@ A Marvel Comics API é uma API RESTful que fornece acesso a informações sobre 
 
 ## Exemplos de Requisições
 
-Criar uma Comic
-http
-Copy code
+
+## Criar uma Comic
+
+```http
 POST /comic
 Content-Type: application/json
-
 {
   "título": "Guerra Civil #1",
   "descrição": "Guerra Civil é uma série de quadrinhos da Marvel Comics...",
   "publicação": "2006-07-01",
   "capaURL": "https://example.com/guerra-civil-1.jpg"
 }
-Obter uma Comic por ID
-http
-Copy code
-GET /comic/123
-Atualizar uma Comic existente
-http
-Copy code
-PUT /comic/123
-Content-Type: application/json
+```
 
+## Obter uma Comic por ID
+
+```http
+GET /comic/123
+```
+
+## Atualizar uma Comic existente
+```http
+Content-Type: application/json
 {
   "título": "Guerra Civil #2",
   "descrição": "Guerra Civil é uma série de quadrinhos da Marvel Comics...",
   "publicação": "2006-07-02",
   "capaURL": "https://example.com/guerra-civil-2.jpg"
 }
-Excluir uma Comic
-http
-Copy code
-DELETE /comic/123
-Obter todas as Comics da Marvel
-http
-Copy code
-GET /comic/marvel-comics
-Criar um novo Criador
-http
-Copy code
-POST /criador
-Content-Type: application/json
-
-{
-  "nome": "Stan Lee",
-  "funcao": "Escritor",
-  "hqsContribuidas": "Homem-Aranha, Quarteto Fantástico"
-}
-Obter um Criador por ID
-http
-Copy code
-GET /criador/456
-Atualizar um Criador existente
-http
-Copy code
-PUT /criador/456
-Content-Type: application/json
-
-{
-  "funcao": "Editor Chefe"
-}
-Excluir um Criador
-http
-Copy code
-DELETE /criador/456
-Obter todos os Criadores da Marvel
-http
-Copy code
-GET /criador/marvel-criadores
-Criar um novo Personagem
-http
-Copy code
-POST /personagem
-Content-Type: application/json
-
-{
-  "nome": "Homem de Ferro",
-  "descrição": "Homem de Ferro é um super-herói fictício...",
-  "url": "https://example.com/homem-de-ferro"
-}
-Obter um Personagem por ID
-http
-Copy code
-GET /personagem/789
-Atualizar um Personagem existente
-http
-Copy code
-PUT /personagem/789
-Content-Type: application/json
-
-{
-  "descrição": "Homem de Ferro é um super-herói bilionário, playboy e filantropo..."
-}
-Excluir um Personagem
-http
-Copy code
-DELETE /personagem/789
-Obter todos os Personagens da Marvel
-http
-Copy code
-GET /personagem/marvel-personagens
+```
