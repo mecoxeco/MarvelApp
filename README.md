@@ -21,7 +21,7 @@ Linguagem e Dependências Utilizadas no MarvelAPP:
 ![npm](https://img.shields.io/badge/-NPM-CB3837?style=flat&logo=npm&logoColor=white)
 ![node](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![express](https://img.shields.io/badge/-Express-000000?style=flat&logo=express&logoColor=white)
-[![axios](https://img.shields.io/badge/-axios-007ACC?style=flat&logo=axios&logoColor=white)](https://github.com/axios/axios)
+[![axios](https://img.shields.io/badge/-Axios-007ACC?style=flat&logo=axios&logoColor=white)](https://github.com/axios/axios)
 ![jest](https://img.shields.io/badge/-Jest-C21325?style=flat&logo=jest&logoColor=white)
 ![mongoose](https://img.shields.io/badge/-Mongoose-47A248?style=flat&logo=mongoose&logoColor=white)
 [![marvel-api](https://img.shields.io/badge/-Marvel_API-FF0000?style=flat&logo=marvel&logoColor=white)](https://developer.marvel.com/)
