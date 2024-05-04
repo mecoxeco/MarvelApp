@@ -46,24 +46,24 @@ export class ComicService {
         try {
             const timestamp = new Date().getTime().toString();
             const hash = md5(timestamp + marvelPrivateKey + marvelPublicKey);
-            const response = await axios.get(`https://gateway.marvel.com/v1/public/comics?apikey=${marvelPublicKey}&hash=${hash}&ts=${timestamp}`);
+            const response = await axios.get(`https://gateway.marvel.com/v1/public/comics?apikey=${marvelPublicKey}&hash=${hash}&ts=${timestamp}&events=238`); // 238 -> Guerra Civil
             const marvelComics = response.data.data.results;
-
+    
             const comicsToSave: Comic[] = [];
-
+    
             for (const marvelComic of marvelComics) {
                 const comicData: Comic = {
-                    título: marvelComic.title,
-                    descrição: marvelComic.description,
-                    publicação: new Date(marvelComic.dates[0].date),
-                    capaURL: `${marvelComic.thumbnail.path}.${marvelComic.thumbnail.extension}`
+                    title: marvelComic.title,
+                    description: marvelComic.description,
+                    publicationDate: new Date(marvelComic.dates[0].date),
+                    coverUrl: `${marvelComic.thumbnail.path}.${marvelComic.thumbnail.extension}`
                 };
-
+    
                 comicsToSave.push(comicData);
             }
-
+    
             await Comic.insertMany(comicsToSave);
-
+    
             const comicsFromDb = await Comic.find();
             return comicsFromDb;
         } catch (error) {
