@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import { CriadorService } from './CriadorService';
 import { Criador } from './CriadorSchema';
-import md5 from 'md5'; // Importe a função md5 para calcular o hash
+import md5 from 'md5'; 
 import axios from 'axios';
 
 const router = express.Router();
