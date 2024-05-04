@@ -1,1 +1,19 @@
-
+config:
+  target: 'http://localhost:3000'
+  phases:
+    - duration: 60 # 
+      arrivalRate: 10 # 
+  defaults:
+    headers:
+      Content-Type: 'application/json'
+scenarios:
+  - flow:
+      - post:
+          url: '/comic'
+          json:
+            title: 'Comic de Teste'
+            description: 'Descrição do Comic de Teste'
+            publicationDate: '2024-05-03'
+            coverUrl: 'http://exemplo.com/capa.jpg'
+      - get:
+          url: '/comic/{{ $response.body._id }}'
