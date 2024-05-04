@@ -9,10 +9,10 @@ Saga foi Escolhida
 <kbd>- [x] </kbd>
 
 ## Código realiza CRUD (Create, Read, Update & Delete)
-<kbd>- [ ] </kbd>
+<kbd>- [x] </kbd>
 
 ## Código possui rota para buscar dados na API da Marvel e Salvar em nosso BD
-<kbd> - ( ) </kbd>
+<kbd> - (x) </kbd>
 
 ## Código possui todas as modelagens para as classes
 - Personagens_: Mapear os dados dos personagens que aparecem na saga, *ATRIBUTOS* = Nome, Descrição, URL da imagem;
