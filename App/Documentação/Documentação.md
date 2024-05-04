@@ -1,9 +1,9 @@
 # MarvelAPP
 
-[![GitHub license](https://img.shields.io/github/license/username/repository)](https://github.com/mecoxeco/MarvelApp/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/username/repository)](https://github.com/mecoxeco/MarvelApp/issues)
-[![GitHub stars](https://img.shields.io/github/stars/username/repository)](https://github.com/mecoxeco/MarvelApp/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/username/repository)](https://github.com/mecoxeco/MarvelApp/network)
+[![GitHub license](https://img.shields.io/github/license/mecoxeco/MarvelApp)](https://github.com/mecoxeco/MarvelApp/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/mecoxeco/MarvelApp)](https://github.com/mecoxeco/MarvelApp/issues)
+[![GitHub stars](https://img.shields.io/github/stars/mecoxeco/MarvelApp)](https://github.com/mecoxeco/MarvelApp/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/mecoxeco/MarvelApp)](https://github.com/mecoxeco/MarvelApp/network)
 
 ## Visão Geral
 
