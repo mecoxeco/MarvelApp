@@ -1,6 +1,9 @@
 
-#Relatório de Testes da Marvel Comics API
+# Relatório de Testes da Marvel Comics API
 Este relatório apresenta os resultados dos testes automatizados realizados na Marvel Comics API. Os testes foram projetados para garantir o correto funcionamento dos endpoints relacionados a quadrinhos, criadores e personagens da Marvel.
+
+[![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+
 
 ``` Base URL: https://marvel-comics-api.com ```
 
