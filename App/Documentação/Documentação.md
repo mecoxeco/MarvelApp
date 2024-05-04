@@ -65,6 +65,7 @@ GET /comic/123
 
 ## Atualizar uma Comic existente
 ```http
+PUT /comic/123
 Content-Type: application/json
 {
   "título": "Guerra Civil #2",
