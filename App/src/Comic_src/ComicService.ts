@@ -69,5 +69,24 @@ export class ComicService {
         } catch (error) {
             throw new Error('Erro ao obter quadrinhos da Marvel: ' + error.message);
         }
+
+        export const getMarvelComicsByNumber = async (numero: string) => {
+    const marvelPublicKey = 'sua_chave_publica';
+    const marvelPrivateKey = 'sua_chave_privada';
+
+    try {
+        const timestamp = new Date().getTime().toString();
+        const hash = md5(timestamp + marvelPrivateKey + marvelPublicKey);
+        const response = await axios.get(`https://gateway.marvel.com/v1/public/comics?issueNumber=${numero}&apikey=${marvelPublicKey}&hash=${hash}&ts=${timestamp}`);
+        
+        if (response.status === 200) {
+            return response.data.data.results;
+        } else {
+            throw new Error('Erro ao buscar as edições.');
+        }
+    } catch (error) {
+        throw new Error('Erro interno do servidor.');
+    }
+};
     }
 }      
