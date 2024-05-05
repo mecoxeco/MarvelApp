@@ -34,7 +34,7 @@ Saga foi Escolhida
 - Testes de Carga: Teste de carga para avaliar a perfomance e estabilidade da API;
 - Relátorio dos testes: Documentar e Relatar os Resultados dos testes;
 - Devem alcançar 90% de cobertura;
-<kbd> - ( ) </kbd>
+<kbd> - (x) </kbd>
 
 ## Todo o Código está documentado
 Documentar todas as rotas da API e todos os métodos HTTP que foram utilizados assim como outras definições
@@ -42,5 +42,5 @@ Documentar todas as rotas da API e todos os métodos HTTP que foram utilizados a
 
 # OPCIONAL
 
-## Front do Código está impementada
+## Front do Código está implementada
 <kbd> - ( ) </kbd>
