@@ -43,9 +43,9 @@ A Marvel Comics API é uma API RESTful que fornece acesso a informações sobre 
 
 ## Exemplos de Requisições
 
+### Comic
 
-## Criar uma Comic
-
+#### Criar uma Comic
 ```http
 POST /comic
 Content-Type: application/json
@@ -57,13 +57,19 @@ Content-Type: application/json
 }
 ```
 
-## Obter uma Comic por ID
-
+#### Obter uma Comic por ID
 ```http
 GET /comic/123
+Content-Type: application/json
+{
+  "título": "Guerra Civil #1",
+  "descricao": "Guerra Civil é uma série de quadrinhos da Marvel Comics...",
+  "publicacao": "2006-07-01",
+  "capaURL": "https://example.com/guerra-civil-1.jpg"
+}
 ```
 
-## Atualizar uma Comic existente
+#### Atualizar uma Comic existente
 ```http
 PUT /comic/123
 Content-Type: application/json
@@ -72,5 +78,109 @@ Content-Type: application/json
   "descrição": "Guerra Civil é uma série de quadrinhos da Marvel Comics...",
   "publicação": "2006-07-02",
   "capaURL": "https://example.com/guerra-civil-2.jpg"
+}
+```
+
+#### Deletar uma Comic existente
+```http
+DELETE /comic/123
+Content-Type: application/json
+{
+  "título": "Guerra Civil #2",
+  "descrição": "Guerra Civil é uma série de quadrinhos da Marvel Comics...",
+  "publicação": "2006-07-02",
+  "capaURL": "https://example.com/guerra-civil-2.jpg"
+}
+```
+
+### Criador
+
+#### Criar um Criador
+```http
+POST /criador
+Content-Type: application/json
+{
+  "nome": "Mark Millar",
+  "funcao": "Escritor",
+  "hqsContribuidas": "Guerra Civil #2"
+}
+```
+
+#### Obter um Criador por ID
+```http
+GET /criador/123
+Content-Type: application/json
+{
+  "nome": "Steve McNiven",
+  "funcao": "Desenhista",
+  "hqsContribuidas": "Guerra Civil #3"
+}
+```
+
+#### Atualizar um Criador existente
+```http
+PUT /criador/123
+Content-Type: application/json
+{
+  "nome": "Morry Hollowell",
+  "funcao": "Colorista",
+  "hqsContribuidas": "Guerra Civil #5"
+}
+```
+
+#### Deletar um Criador existente
+```http
+DELETE /criador/123
+Content-Type: application/json
+{
+  "nome": "Mark Millar",
+  "funcao": "Escritor",
+  "hqsContribuidas": "Guerra Civil #2"
+}
+```
+
+### Personagem
+
+#### Criar um Personagem
+```http
+POST /character
+Content-Type: application/json
+{
+  "nome": "Demolidor",
+  "descrição": "Também conhecido como O Homem sem medo....",
+  "url": "https://example.com/demolidor.jpg"
+}
+```
+
+#### Obter um Personagem por ID
+```http
+GET /character/123
+Content-Type: application/json
+{
+  "nome": "Homem-Aranha",
+  "descrição": "Peter Parker, o alter ego do Homem-Aranha....",
+  "url": "https://example.com/spiderman.jpg"
+}
+```
+
+#### Atualizar uma Comic existente
+```http
+PUT /character/123
+Content-Type: application/json
+{
+  "nome": "Homem de Ferro",
+  "descrição": "Gênio, Bilionário, Playboy e Filantropo...",
+  "url": "https://example.com/ironman.jpg"
+}
+```
+
+#### Deletar uma Comic existente
+```http
+POST /character/123
+Content-Type: application/json
+{
+  "nome": "Demolidor",
+  "descrição": "Também conhecido como O Homem sem medo....",
+  "url": "https://example.com/demolidor.jpg"
 }
 ```

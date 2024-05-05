@@ -38,7 +38,7 @@ Saga foi Escolhida
 
 ## Todo o Código está documentado
 Documentar todas as rotas da API e todos os métodos HTTP que foram utilizados assim como outras definições
-<kbd> - ( ) </kbd>
+<kbd> - (x) </kbd>
 
 # OPCIONAL
 
