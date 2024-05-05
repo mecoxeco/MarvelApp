@@ -90,4 +90,23 @@ router.get('/marvel-comics', async (req: Request, res: Response) => {
     }
 });
 
+router.get('/marvel-comics/:numero', async (req: Request, res: Response) => {
+    const { numero } = req.params;
+    try {
+        const timestamp = new Date().getTime().toString();
+        const hash = md5(timestamp + marvelPrivateKey + marvelPublicKey);
+        const response = await axios.get(`https://gateway.marvel.com/v1/public/comics?issueNumber=${numero}&apikey=${marvelPublicKey}&hash=${hash}&ts=${timestamp}`);
+        
+        if (response.status === 200) {
+            const marvelComics = response.data.data.results;
+            res.json(marvelComics);
+        } else {
+            res.status(response.status).json({ message: 'Erro ao buscar as edições.' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Erro interno do servidor.' });
+    }
+});
+
+
 export default router;
