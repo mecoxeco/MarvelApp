@@ -71,8 +71,8 @@ export class ComicService {
         }
 
         export const getMarvelComicsByNumber = async (numero: string) => {
-    const marvelPublicKey = 'sua_chave_publica';
-    const marvelPrivateKey = 'sua_chave_privada';
+    const marvelPublicKey = '4c75056781c2f72964983ce847b7ab96';
+    const marvelPrivateKey = 'f4add723385ac8fbc2f7f5d9891e96f83aeef64e';
 
     try {
         const timestamp = new Date().getTime().toString();
